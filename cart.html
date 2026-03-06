@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Cart</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="h-primary center">Your Cart</h1>
+
+<div id="cartBox"></div>
+<h2 id="total" class="center"></h2>
+
+<a href="confirm.html"><button class="btn">Confirm Order</button></a>
+
+<script src="cart.js"></script>
+
+<script>
+function loadCart(){
+let cart=getCart();
+let box=document.getElementById("cartBox");
+let total=0;
+box.innerHTML="";
+
+cart.forEach((item,i)=>{
+total+=item.price*item.qty;
+
+box.innerHTML+=`
+<div class="cart-row">
+${item.name} ₹${item.price}
+<button onclick="changeQty(${i},-1)">-</button>
+${item.qty}
+<button onclick="changeQty(${i},1)">+</button>
+</div>`;
+});
+
+document.getElementById("total").innerText="Total ₹"+total;
+}
+
+loadCart();
+updateCartCount();
+</script>
+
+</body>
+</html>
+

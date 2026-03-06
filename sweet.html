@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sweets Menu | ChilliPlate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav id="navbar">
+    <div id="logo">
+        <img src="logo.png.jpeg">
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="veg.html">Veg</a></li>
+        <li><a href="nonveg.html">Non-Veg</a></li>
+        <li><a href="sweet.html">Sweets</a></li>
+        <li><a href="cart.html">Cart 🛒 <span id="cartCount">0</span></a></li>
+    </ul>
+</nav>
+
+<h1 class="h-primary center">🍰 Sweet Dishes</h1>
+
+<div class="menu-grid">
+
+<div class="menu-card">
+<img src="https://picsum.photos/200?sw1">
+<h3>Gulab Jamun</h3>
+<p>₹60</p>
+<button onclick="addToCart('Gulab Jamun',60)">Add to Cart</button>
+</div>
+
+<div class="menu-card">
+<img src="https://picsum.photos/200?sw2">
+<h3>Rasgulla</h3>
+<p>₹55</p>
+<button onclick="addToCart('Rasgulla',55)">Add to Cart</button>
+</div>
+
+<div class="menu-card">
+<img src="https://picsum.photos/200?sw3">
+<h3>Jalebi</h3>
+<p>₹70</p>
+<button onclick="addToCart('Jalebi',70)">Add to Cart</button>
+</div>
+
+<div class="menu-card">
+<img src="https://picsum.photos/200?sw4">
+<h3>Kaju Katli</h3>
+<p>₹120</p>
+<button onclick="addToCart('Kaju Katli',120)">Add to Cart</button>
+</div>
+
+<div class="menu-card">
+<img src="https://picsum.photos/200?sw5">
+<h3>Barfi</h3>
+<p>₹80</p>
+<button onclick="addToCart('Barfi',80)">Add to Cart</button>
+</div>
+
+<div class="menu-card">
+<img src="https://picsum.photos/200?sw6">
+<h3>Laddu</h3>
+<p>₹50</p>
+<button onclick="addToCart('Laddu',50)">Add to Cart</button>
+</div>
+
+<div class="menu-card">
+<img src="https://picsum.photos/200?sw7">
+<h3>Rabri</h3>
+<p>₹95</p>
+<button onclick="addToCart('Rabri',95)">Add to Cart</button>
+</div>
+
+<div class="menu-card">
+<img src="https://picsum.photos/200?sw8">
+<h3>Gajar Halwa</h3>
+<p>₹90</p>
+<button onclick="addToCart('Gajar Halwa',90)">Add to Cart</button>
+</div>
+
+<div class="menu-card">
+<img src="https://picsum.photos/200?sw9">
+<h3>Rasmalai</h3>
+<p>₹110</p>
+<button onclick="addToCart('Rasmalai',110)">Add to Cart</button>
+</div>
+
+<div class="menu-card">
+<img src="https://picsum.photos/200?sw10">
+<h3>Kulfi</h3>
+<p>₹65</p>
+<button onclick="addToCart('Kulfi',65)">Add to Cart</button>
+</div>
+
+</div>
+
+<script src="cart.js"></script>
+<script>updateCartCount()</script>
+
+</body>
+</html>
+
